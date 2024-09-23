@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WMA | Contact</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://chubbysquirrel.neocities.org/Wollocot%20Icon%20Website.png" type="image/png" sizes="256x256">
+  </head>
+  <body>
+    <div id="navbar">
+      <h1>Wollocot Math Academy</h1>
+      <ul>
+        <li><a href="https://wma.cwollocot.repl.co/">Home</a></li>
+        <li><a href="https://wma.cwollocot.repl.co/practice.html">Practice</a></li>
+        <li><a href="https://wma.cwollocot.repl.co/about.html">About</a></li>
+        <li><a href="https://wma.cwollocot.repl.co/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <center>
+      <div class="contactForm">
+        <h2>Contact Form</h2>
+        <br>
+        <form>
+          <label for="firstName">First Name</label>
+          <br>
+          <input id="firstName" name="fName" type="text" placeholder="Your First Name">
+          <br><br>
+          <label for="lastName">Last Name</label>
+          <br>
+          <input id="lastName" name="lName" type="text" placeholder="Your Last Name">
+          <br><br>
+          <label>What is your role?</label>
+          <br>
+          <input type="checkbox" id="student" name="student"/>
+          <label for="student">Student</label><br>
+          <input type="checkbox" id="educator" name="educator"/>
+          <label for="student">Educator</label><br>
+          <input type="checkbox" id="other" name="other"/>
+          <label for="student">Other</label>
+          <br><br>
+          <textarea width="200px" rows="7" cols="40" placeholder="Your message here"></textarea>
+          <br><br>
+          <button id="submit" onclick="successful()" style="background-color: white">Submit</button>
+        </form>
+      </div>
+    </center>
+    <script>
+      var dataBase = [];
+      function Person(name) {
+        this.fName = name;
+        this.lName = lname;
+        this.role = role;
+      }
+      var lucas = {name: "Lucas", }
+    </script>
+    <div class="footer">
+      <img src="https://chubbysquirrel.neocities.org/Wollocot%20Icon%20Website.png" width="100">
+      <p>This website is © Wollocot Industries, Inc.</p>
+      <p>For more information, please email WMA@gmail.com</p>
+    </div>
+  </body>
+</html>

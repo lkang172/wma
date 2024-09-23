@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>WMA | Practice</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="https://chubbysquirrel.neocities.org/Wollocot%20Icon%20Website.png" type="image/png" sizes="256x256">
+</head>
+
+<body>
+	<div id="navbar">
+		<h1>Wollocot Math Academy</h1>
+		<ul>
+			<li><a href="https://wma.cwollocot.repl.co/">Home</a></li>
+			<li><a href="https://wma.cwollocot.repl.co/practice.html">Practice</a></li>
+			<li><a href="https://wma.cwollocot.repl.co/about.html">About</a></li>
+			<li><a href="https://wma.cwollocot.repl.co/contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<center>
+		<div class="maxwidth">
+			<div class="display">
+				<h2>Basic Math Practice</h2>
+				<button id="reveal" onclick="reveal()">Start!</button>
+          <button id="hide" onclick="hide()" style="display:none">Hide</button>
+        </div>
+        <p>In this math practice, students will solidify their knowledge of the basic building blocks of math: addition, subtraction, multiplication, and division.</p>
+        <br>
+        <div class="practice" id="practice">
+          <button id="addition" onclick="add()">Addition</button>
+          <button id="subtraction" onclick="subtract()">Subtraction</button>
+          <button id="multiplication" onclick="multiply()">Multiplication</button>
+          <button id="division" onclick="divide()">Division</button>
+          <br>
+          <br>
+          <p>Your Equation: </p>
+          <font size="20px"><strong><p id="output"></p></strong></font>
+          <button id="show" onclick="showAnswer()">Show Answer</button>
+          <input id="input" placeholder="Your Answer" type="number"/>
+          <button id="check" onclick="check()">Check</button>
+          <p id="status"></p>
+        </div>
+        <br>
+        <h2>Quadratics Factoring Practice</h2>
+        <button id="reveal2" onclick="reveal2()">Start</button>
+        <button id="hide2" onclick="hide2()" style="display: none">Hide</button>
+        <p>This practice generates random quadratic problems for the student to factor. A basic knowledge of Algebra 1 is highly recommended, if not required.</p>
+        <br>
+        <div class="practice2" id="practice2">
+          <button id="quadratic" onclick="randomQuad()">New Equation</button>
+          <br>
+          <br>
+          <p>Your Equation: </p>
+          <font size="20px"><strong><p id="output2"></p></strong></font>
+          <button id="show2" onclick="">Show Answer</button>
+          <input id="input2" placeholder="Your Answer"/>
+          <button id="check" onclick="">Check</button>
+          <p id="status2"></p>
+        </div>
+        <br>
+      </div>
+      <div class="footer">
+        <img src="https://chubbysquirrel.neocities.org/Wollocot%20Icon%20Website.png" width="100">
+        <p>This website is © Wollocot Industries, Inc.</p>
+        <p>For more information, please email WMA@gmail.com</p>
+      </div>
+    </center>
+    <script src="/script.js"></script>
+  </body>
+</html>

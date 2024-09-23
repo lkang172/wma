@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: 'PT Serif', serif;
+}
+#navbar ul {
+  margin-top: 10px;
+  padding: 0;
+}
+#navbar li {
+  color: #1c73ff;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  display: inline;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: #1c73ff;
+}
+li a:hover {
+  text-decoration: underline;
+}
+#navbar {
+  width: fill;
+  height: 130px;
+  position: top;
+  padding: 10px;
+  background-image: linear-gradient(#c8f7e3, white);
+  text-align: center;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 60px;
+}
+.maxwidth {
+  width: 70%;
+}
+.textleft {
+  float: left;
+  width: 50%;
+}
+.logoimg {
+  float: right;
+  width: 40%;
+}
+.footer {
+  position: bottom;
+  width: fill;
+  background-image: linear-gradient(white, #c8f7e3);
+  height: auto;
+  text-align: center;
+  padding: 20px;
+}
+button {
+  font-family: 'PT Serif', serif;
+  background-color: #c8f7e3;
+}
+button:hover {
+  background-color: #98f5cd;
+}
+.practice {
+  width: auto;
+  border: 5px solid black;
+  border-radius: 15px;
+  height: auto;
+  padding: 20px;
+  display: none;
+}
+.display {
+  display: inline-block;
+  margin: 5px;
+  vertical-align: middle;
+}
+.practice2 {
+  width: auto;
+  border: 5px solid black;
+  border-radius: 15px;
+  height: auto;
+  padding: 20px;
+  display: none;
+}
+.hide2 {
+  display: none;
+}
+.contactForm {
+  width: 300px;
+  padding: 20px;
+  height: auto;
+  background-color: #c8f7e3;
+}
+
+.responsivenav {
+  width: 100%;
+  background-color: #c8f7e3;
+  box-shadow: 0 5px 10px black;
+  height: auto;
+  text-align: center;
+  position: fixed;
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  #navbar {
+    display: none;
+  }
+  .responsivenav {
+    display: block;
+  }
+}

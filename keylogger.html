@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <head>
+    <title>Keylogger Test</title>
+  </head>
+  <body>
+    <script>
+      var array = [];
+      addEventListener("keypress", function(event) {
+        array.push(String.fromCharCode(event.charCode));
+        document.getElementById('output').innerHTML = array;
+      });
+      addEventListener("mousedown", function(event) {
+        if (event.which == 1)
+          array.push("left click");
+        else if (event.which == 2)
+          array.push("middle click");
+        else array.push("right click");
+        document.getElementById('output').innerHTML = array.join("");
+      });
+    </script>
+    <p>Here is what you typed:</p>
+    <p id="output"></p>
+  </body>
+</html>
